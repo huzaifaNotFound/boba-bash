@@ -1,4 +1,14 @@
-const imageNumbers = [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12]; 
+const imageNumbers = ["https://ibb.co/xSz3dcMY",
+"https://ibb.co/Hp4tnkn8",
+"https://ibb.co/N25vCK8t",
+"https://ibb.co/gb63krQF",
+"https://ibb.co/ns2kd4WW",
+"https://ibb.co/wFnc4DQX",
+"https://ibb.co/N23cj8jX",
+"https://ibb.co/zT0kS5mW",
+"https://ibb.co/DTJkqq2",
+"https://ibb.co/7Mwgh7b",
+"https://ibb.co/fdqxtvMc"]; 
 let idx = 0;
 let hasClicked = false;
 
