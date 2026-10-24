@@ -8,9 +8,10 @@ const imageNumbers = ["https://i.ibb.co/ds9tt8JB/1.jpg",
 "https://i.ibb.co/KpCkhnsf/9.jpg",
 "https://i.ibb.co/bjMLtw92/10.jpg",
 "https://i.ibb.co/k27y04s9/11.jpg",
-"https://i.ibb.co/93B9sFKZ/12.webp"]; 
+"https://i.ibb.co/93B9sFKZ/12.webp"];
 let idx = 0;
 let hasClicked = false;
+let atEnd = false;
 
 const btn = document.getElementById("btn");
 const imageContainer = document.getElementById("image-container");
@@ -24,11 +25,26 @@ btn.addEventListener("click", () => {
     imageContainer.appendChild(img);
   }
 
+  if (atEnd) {
+    atEnd = false;
+    idx = 0;
+    btn.textContent = "Click for more spooky vibes";
+  }
+
+  if (idx === imageNumbers.length - 1) {
+    img.src = imageNumbers[idx];
+    img.alt = `Spooky image ${idx + 1}`;
+    atEnd = true;
+    idx = 0; 
+    btn.textContent = "That's all I have! Click to start over";
+    return;
+  }
+
   const num = imageNumbers[idx];
   img.src = num;
   img.alt = `Spooky image ${idx + 1}`;
 
-  idx = (idx + 1) % imageNumbers.length;
+  idx = idx + 1;
 
   if (!hasClicked) {
     hasClicked = true;
