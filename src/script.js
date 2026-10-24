@@ -1,4 +1,5 @@
-let i = 0;
+const imageNumbers = [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12]; 
+let idx = 0;
 let hasClicked = false;
 
 const btn = document.getElementById("btn");
@@ -13,10 +14,11 @@ btn.addEventListener("click", () => {
     imageContainer.appendChild(img);
   }
 
-  img.src = `/public/images/${i + 1}.jpg`;
-  img.alt = `Spooky image ${i + 1}`;
+  const num = imageNumbers[idx];
+  img.src = `./public/images/${num}.jpg`;
+  img.alt = `Spooky image ${num}`;
 
-  i = (i + 1) % 10;
+  idx = (idx + 1) % imageNumbers.length;
 
   if (!hasClicked) {
     hasClicked = true;
