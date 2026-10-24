@@ -8,7 +8,9 @@ const imageNumbers = ["https://i.ibb.co/ds9tt8JB/1.jpg",
 "https://i.ibb.co/KpCkhnsf/9.jpg",
 "https://i.ibb.co/bjMLtw92/10.jpg",
 "https://i.ibb.co/k27y04s9/11.jpg",
-"https://i.ibb.co/93B9sFKZ/12.webp"];
+"https://i.ibb.co/93B9sFKZ/12.webp",
+"https://i.ibb.co/nq6Mh3Gg/13.jpg",
+"https://i.ibb.co/Gf9XNZ00/14.webp"];
 let idx = 0;
 let hasClicked = false;
 let atEnd = false;
