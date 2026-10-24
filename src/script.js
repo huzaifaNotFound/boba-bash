@@ -1,14 +1,14 @@
-const imageNumbers = ["https://ibb.co/xSz3dcMY",
-"https://ibb.co/Hp4tnkn8",
-"https://ibb.co/N25vCK8t",
-"https://ibb.co/gb63krQF",
-"https://ibb.co/ns2kd4WW",
-"https://ibb.co/wFnc4DQX",
-"https://ibb.co/N23cj8jX",
-"https://ibb.co/zT0kS5mW",
-"https://ibb.co/DTJkqq2",
-"https://ibb.co/7Mwgh7b",
-"https://ibb.co/fdqxtvMc"]; 
+const imageNumbers = ["https://i.ibb.co/ds9tt8JB/1.jpg",
+"https://i.ibb.co/ynSSr846/2.jpg",
+"https://i.ibb.co/B5tJVmmj/3.jpg",
+"https://i.ibb.co/GQn647Sn/4.jpg",
+"https://i.ibb.co/V0cJHX2p/5.jpg",
+"https://i.ibb.co/8Lf4sdwQ/7.jpg",
+"https://i.ibb.co/FLpcn6Wm/8.jpg",
+"https://i.ibb.co/KpCkhnsf/9.jpg",
+"https://i.ibb.co/bjMLtw92/10.jpg",
+"https://i.ibb.co/k27y04s9/11.jpg",
+"https://i.ibb.co/93B9sFKZ/12.webp"]; 
 let idx = 0;
 let hasClicked = false;
 
@@ -25,8 +25,8 @@ btn.addEventListener("click", () => {
   }
 
   const num = imageNumbers[idx];
-  img.src = `https://github.com/huzaifaNotFound/boba-bash/blob/main/public/images/${num}.jpg`;
-  img.alt = `Spooky image ${num}`;
+  img.src = num;
+  img.alt = `Spooky image ${idx + 1}`;
 
   idx = (idx + 1) % imageNumbers.length;
 
