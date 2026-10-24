@@ -15,7 +15,7 @@ btn.addEventListener("click", () => {
   }
 
   const num = imageNumbers[idx];
-  img.src = `./public/images/${num}.jpg`;
+  img.src = `https://github.com/huzaifaNotFound/boba-bash/blob/main/public/images/${num}.jpg`;
   img.alt = `Spooky image ${num}`;
 
   idx = (idx + 1) % imageNumbers.length;
